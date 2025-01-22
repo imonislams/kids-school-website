@@ -6,6 +6,9 @@
     font-style: normal;
   } 
   /* shared style */
+  main{
+    padding-bottom: 10px;
+  }
   .display-flex{
     display: flex;
   }
@@ -50,10 +53,9 @@
   }
   /* navber styles */
   .navber{
-    
+    display: flex;
     justify-content: space-around;
     align-items: center;
-
   }
   .nav-item{
       list-style:none ;
@@ -103,10 +105,134 @@
   .standard-curriculamn-container{
     display: grid;
     grid-template-columns: repeat(3 ,1fr);
-    justify-content: center;
-    align-items: center;
+    gap: 55px;
+    padding: 30px;
     text-align: center;
-    
-    
   }
-  
+
+  .curriculamn-container{
+    background-image: linear-gradient(rgb(52, 170, 48), rgb(102, 153, 132), rgb(121, 153, 116), white);
+    border: none;
+    border-radius: 10px;
+  }
+  .btn {
+    background-color: whitesmoke;
+    font-weight: bold;
+    color: red;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 25px;
+  margin: 30px;
+}
+
+.grid-container img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.grid-container div {
+  border-radius: 10px;
+  box-shadow: 0px 6px 60px 0px gray;
+}
+
+.img1 {
+  grid-column: span 2;
+  grid-row: span 2;
+  object-fit: cover;
+}
+
+.stories {
+  text-align: center;
+}
+.btn-box {
+  font-weight: bold;
+  color: black;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  top: -25px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(1, 172, 253, 1);
+  padding: 70px;
+  border: none;
+  color: white;
+  gap: 20px;
+}
+
+
+.list {
+  list-style: none;
+}
+
+.title {
+  display: flex;
+}
+
+.logo1 {
+  height: 100px;
+}
+/* responsive */
+@media screen and (max-width: 576px) {
+
+  .school,
+  .list,
+  .btn-orange {
+
+      display: none;
+  }
+
+  .hide {
+      display: contents;
+  }
+
+  .banner {
+      flex-direction: column-reverse;
+      text-align: center;
+      margin: 20px 20px;
+  }
+
+  .banner-title {
+      font-size: 50px;
+  }
+
+  nav {
+      margin: 15px;
+      border: 2px solid orange;
+  }
+
+  .standard-curriculamn-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+      padding: 20px;
+      text-align: center;
+      width: 90%;
+  }
+
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn-box {
+      padding: 10px 15px;
+  }
+
+  .img1 {
+      display: none;
+  }
+
+  footer {
+      flex-direction: column;
+  }
+}
