@@ -108,13 +108,37 @@
     gap: 55px;
     padding: 30px;
     text-align: center;
+    margin: 0px 140px 0px 140px;
   }
 
   .curriculamn-container{
-    background-image: linear-gradient(rgb(52, 170, 48), rgb(102, 153, 132), rgb(121, 153, 116), white);
-    border: none;
-    border-radius: 10px;
+    
+
   }
+  #container1{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
+  #container2{
+    box-sizing: border-box;
+border: 0.94px solid rgb(255, 244, 220);
+border-radius: 18.86px;
+
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+  }
+#container3{
+  box-sizing: border-box;
+border: 0.94px solid rgb(242, 232, 255);
+border-radius: 18.86px;
+
+box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
   .btn {
     background-color: whitesmoke;
     font-weight: bold;
@@ -181,7 +205,6 @@ footer {
 .logo1 {
   height: 100px;
 }
-/* responsive */
 @media screen and (max-width: 576px) {
 
   .school,
@@ -215,9 +238,13 @@ footer {
       grid-template-columns: repeat(1, 1fr);
       gap: 25px;
       padding: 20px;
+      align-items: center;
       text-align: center;
       width: 90%;
+      margin: 0px 50px 0px 50px;
   }
+  
+
 
   .grid-container {
       display: grid;
